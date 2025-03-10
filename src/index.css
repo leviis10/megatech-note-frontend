@@ -1,0 +1,249 @@
+:root {
+  --color-black: #000;
+
+  --color-gray-0: #f8f9fa;
+  --color-gray-9: #212529;
+
+  --color-blue-4: #4dabf7;
+
+  --color-red-7: #f03e3e;
+
+  --color-yellow-5: #fcc419;
+
+  --text-xs: 1.024rem;
+  --text-sm: 1.28rem; 
+  --text-md: 1.6rem;
+  --text-lg: 2rem;
+  --text-xl: 2.5rem;
+  --text-2xl: 3.125rem;
+  --text-3xl: 3.906em;
+  --text-4xl: 4.838rem;
+  --text-5xl: 6.104rem;
+
+  --spacing-sm: 0.8rem;
+  --spacing-md: 1.2rem;
+  --spacing-lg: 1.8rem;
+  --spacing-xl: 2.7rem;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+*:focus {
+  outline: none;
+}
+
+html {
+  font-family: sans-serif;
+  font-size: 62.5%;
+  color: var(--color-gray-9);
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--color-gray-0);
+}
+
+input,
+textarea {
+  padding: var(--spacing-md) var(--spacing-lg);
+  border: 1px solid var(--color-black);
+  border-radius: var(--spacing-sm);
+}
+
+textarea {
+  resize: none;
+}
+
+button {
+  border: 1px solid var(--color-black);
+  cursor: pointer;
+}
+
+.mb-3 {
+  margin-bottom: var(--spacing-md);
+}
+
+.container {
+  max-width: 114rem;
+  margin: 0 auto;
+}
+
+.overlay {
+  min-width: 100%;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.text--primary {
+  font-size: var(--text-3xl);
+}
+
+.text--secondary {
+  font-size: var(--text-lg);
+}
+
+.text--center {
+  text-align: center;
+}
+
+.main {
+  margin-top: var(--spacing-xl);
+}
+
+.main__action-container {
+  display: flex;
+  gap: var(--spacing-sm);
+  justify-content: center;
+}
+
+.main__search-bar {
+  display: flex;
+  align-items: center;
+
+  position: relative;
+}
+
+.main__search-icon {
+  width: 1.8rem;
+  height: 1.8rem;
+
+  position: absolute;
+  left: var(--spacing-sm);
+}
+
+.main__search-input {
+  padding-left: calc(1.8rem + var(--spacing-lg));
+}
+
+.main__add-button {
+  border-radius: var(--spacing-sm);
+  padding: 0 var(--spacing-md);
+  background-color: var(--color-blue-4);
+}
+
+.notes__container {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  margin: 0 auto;
+  gap: var(--spacing-md);
+}
+
+.note__container {
+  border: 1px solid var(--color-black);
+  width: 100%;
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-radius: var(--spacing-sm);
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.note__last-update {
+  align-self: flex-end;
+}
+
+.modal__container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid var(--color-black);
+  background-color: var(--color-gray-0);
+  border-radius: var(--spacing-sm);
+  padding: var(--spacing-sm) var(--spacing-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.modal__action {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal__body {
+  font-size: var(--text-md);
+}
+
+.modal__footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--spacing-sm);
+}
+
+.form__add-note-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.form__add-note-body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.modal__close-button-container {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.modal__close-button {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.modal__submit-button {
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--spacing-sm);
+  background-color: var(--color-blue-4);
+}
+
+.modal__delete-button {
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--spacing-sm);
+  background-color: var(--color-red-7);
+  display: flex;
+  align-items: center;
+}
+
+.modal__update-button {
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--spacing-sm);
+  background-color: var(--color-yellow-5);
+  display: flex;
+  align-items: center;
+}
+
+.modal__delete-icon {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.modal__update-icon {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.form__update-note-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.form__update-note-body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
