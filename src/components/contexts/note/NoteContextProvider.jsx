@@ -11,16 +11,14 @@ function NoteContextProvider({ children }) {
         setNotes(foundNotes);
     }, []);
 
-    const filterNotes = async function (notesTitle) {
-        if (!notesTitle.trim()) {
-            await fetchNotes()
-        }
+    const filterNotes = useCallback(async (notesTitle) => {
+        await fetchNotes();
 
         setNotes((prevValue) => {
             return prevValue
                 .filter((value) => value.title.toLowerCase().includes(notesTitle.toLowerCase()));
         });
-    };
+    }, [fetchNotes]);
 
     const value = {
         notes,
