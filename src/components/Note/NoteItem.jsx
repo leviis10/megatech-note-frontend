@@ -3,12 +3,12 @@ import { toFormattedStringDate } from "../../utils/dateUtils";
 import Modal from "../Modal/Modal";
 import ModalBody from "../Modal/ModalBody";
 import ModalFooter from "../Modal/ModalFooter";
-import TrashIcon from "../icons/TrashIcon";
-import PencilSquareIcon from "../icons/PencilSquareIcon";
-import noteService from "../service/noteService";
+import TrashIcon from "../Icons/TrashIcon";
+import PencilSquareIcon from "../Icons/PencilSquareIcon";
+import noteService from "../../service/noteService";
 import { useContext } from "react";
-import NoteContext from "../contexts/note/NoteContext";
-import UpdateNote from "../dtos/request/UpdateNote";
+import NoteContext from "../../contexts/note/NoteContext";
+import UpdateNote from "../../dtos/request/UpdateNote";
 
 function NoteItem({ note }) {
     const [modalShown, setModalShown] = useState(false);

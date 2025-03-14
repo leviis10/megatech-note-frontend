@@ -2,10 +2,10 @@ import { useState } from "react";
 import Modal from "../Modal/Modal";
 import ModalBody from "../Modal/ModalBody";
 import ModalFooter from "../Modal/ModalFooter";
-import * as noteService from "../service/noteService";
-import CreateNote from "../dtos/request/CreateNote";
+import * as noteService from "../../service/noteService";
+import CreateNote from "../../dtos/request/CreateNote";
 import { useContext } from "react";
-import NoteContext from "../contexts/note/NoteContext";
+import NoteContext from "../../contexts/note/NoteContext";
 
 function AddButton() {
     const [modalShown, setModalShown] = useState(false);

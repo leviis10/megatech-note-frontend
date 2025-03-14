@@ -1,7 +1,7 @@
 import { useState } from "react";
-import MagnifyingGlass from "../icons/MagnifyingGlass";
+import MagnifyingGlass from "../Icons/MagnifyingGlass";
 import { useContext } from "react";
-import NoteContext from "../contexts/note/NoteContext";
+import NoteContext from "../../contexts/note/NoteContext";
 import { useEffect } from "react";
 
 function SearchBar() {

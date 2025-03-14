@@ -1,4 +1,4 @@
-import XMark from "../icons/XMark";
+import XMark from "../Icons/XMark";
 
 function Modal({ children, onClose }) {
     const closeModalHandler = function () {

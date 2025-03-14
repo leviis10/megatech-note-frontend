@@ -1,7 +1,7 @@
 import NoteItem from "./NoteItem";
 import { useEffect } from "react";
 import { useContext } from "react";
-import NoteContext from "../contexts/note/NoteContext";
+import NoteContext from "../../contexts/note/NoteContext";
 
 function ListNote() {
     const { notes, fetchNotes } = useContext(NoteContext);
